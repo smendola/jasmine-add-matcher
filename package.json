@@ -1,0 +1,11 @@
+{
+  "name": "jasmine-add-matcher",
+  "version": "1.0.0",
+  "description": "Simplified API for adding a Jasmine custom matcher",
+  "main": "addMatcher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Salvatore Mendola",
+  "license": "ISC"
+}
