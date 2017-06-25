@@ -4,8 +4,8 @@
   "description": "Simplified API for adding a Jasmine custom matcher",
   "main": "addMatcher.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "author": "Salvatore Mendola",
-  "license": "ISC"
+  "license": "MIT"
 }
