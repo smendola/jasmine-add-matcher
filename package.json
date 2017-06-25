@@ -1,6 +1,6 @@
 {
   "name": "jasmine-add-matcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simplified API for adding a Jasmine custom matcher",
   "main": "addMatcher.js",
   "scripts": {
