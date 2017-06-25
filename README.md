@@ -30,17 +30,17 @@ type CheckFunction = (actual: any, expected: any, util: Object, customEqualityTe
 type FormatFunction = (actual: any, expected: any, util: Object) => string
 
 declare function matcher(
-    name: string,
-    messageTemplates: string | [string, string],
-    checkFn: CheckFunction,
-    formatValueFn?: FormatFunction
+  name: string,
+  messageTemplates: string | [string, string],
+  checkFn: CheckFunction,
+  formatValueFn?: FormatFunction
 ): Matcher;
 
 declare function addMatcher(
-    name: string,
-    messageTemplates: string | [string, string],
-    checkFn: CheckFunction,
-    formatValueFn?: FormatFunction
+  name: string,
+  messageTemplates: string | [string, string],
+  checkFn: CheckFunction,
+  formatValueFn?: FormatFunction
 ): void;
 
 ```
