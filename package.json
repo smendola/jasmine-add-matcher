@@ -1,11 +1,14 @@
 {
   "name": "jasmine-add-matcher",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Simplified API for adding a Jasmine custom matcher",
   "main": "addMatcher.js",
   "scripts": {
     "test": "jasmine"
   },
   "author": "Salvatore Mendola",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/jasmine": "^2.5.53"
+  }
 }
