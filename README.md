@@ -6,7 +6,7 @@ This is a more declarative, and, I hope, easier to use API for writing custom Ja
 
 Instead of this:
 ```javascript
-// TODO
+// TODO: show using the standard Jasmine API for creating a matcher
 ```
 
 use this:
@@ -19,15 +19,12 @@ it('works', function () {
   expect(3).toBeEven();
 });
 ```
-### More stuff
 
-* {actual} and {expected} value interpolation in message
-* with jasmine.pp or custom formatter
-* abmidextrous message with (not) token embedded', or ['normal message', 'inverted message']
+### API
 
-```javascript
-type CheckFunction = (actual: any, expected: any, util: Object, customEqualityTester: Object) => boolean
-type FormatFunction = (actual: any, expected: any, util: Object) => string
+```typescript
+type CheckFunction = (actual: any, expected: any, util: {}, customEqualityTesters: {}) => boolean
+type FormatFunction = (actual: any, expected: any, util: {}, customEqualityTesters: {}) => string
 
 declare function matcher(
   name: string,
@@ -44,6 +41,14 @@ declare function addMatcher(
 ): void;
 
 ```
+
+### Misc other features
+
+* {actual} and {expected} value interpolation in message
+* with jasmine.pp or custom formatter
+* abmidextrous message with (not) token embedded',
+* or ['normal message', 'inverted message']
+
 ### License
 
 MIT
